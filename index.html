@@ -39,6 +39,7 @@
             --border: #444444;
         }
 
+        /* ШАПКА */
         header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
@@ -61,8 +62,12 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 24px;
             font-weight: 700;
+            text-decoration: none;
             color: white;
         }
 
@@ -93,6 +98,7 @@
             background: rgba(255,255,255,0.3);
         }
 
+        /* HERO */
         .hero {
             background: linear-gradient(135deg, #0088cc 0%, #0066aa 100%);
             color: white;
@@ -157,6 +163,7 @@
             color: var(--primary);
         }
 
+        /* КОНТЕЙНЕР */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -179,6 +186,7 @@
             transform: translateX(-50%);
         }
 
+        /* ПОИСК И ФИЛЬТРЫ */
         .controls {
             display: flex;
             gap: 10px;
@@ -232,6 +240,7 @@
             color: white;
         }
 
+        /* НОВОСТИ */
         .news-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -333,6 +342,7 @@
             border-top: 1px solid var(--border);
         }
 
+        /* ФУНКЦИИ */
         .features {
             background: var(--bg-secondary);
         }
@@ -384,6 +394,7 @@
             line-height: 1.5;
         }
 
+        /* ПОДПИСКА */
         .subscribe {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
@@ -424,6 +435,7 @@
             transform: scale(1.05);
         }
 
+        /* МОДАЛЬНОЕ ОКНО */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -546,6 +558,7 @@
             color: #ffc107;
         }
 
+        /* ФУТЕР */
         footer {
             background: var(--bg-secondary);
             padding: 35px 20px;
@@ -629,6 +642,7 @@
             transform: translateY(-2px);
         }
 
+        /* EMPTY STATE */
         .empty-state {
             text-align: center;
             padding: 50px 20px;
@@ -641,6 +655,7 @@
             opacity: 0.5;
         }
 
+        /* NOTIFICATION */
         .notification {
             position: fixed;
             bottom: 20px;
@@ -670,6 +685,7 @@
             }
         }
 
+        /* RESPONSIVE */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -718,6 +734,7 @@
     </style>
 </head>
 <body>
+    <!-- ШАПКА -->
     <header>
         <div class="header-container">
             <a href="/" class="logo">🚀 TechFlow</a>
@@ -730,6 +747,7 @@
         </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="container" style="text-align: center;">
             <h1>🚀 TechFlow - Новости технологий в реальном времени</h1>
@@ -743,6 +761,7 @@
         </div>
     </section>
 
+    <!-- НОВОСТИ -->
     <section class="section" id="news">
         <div class="container">
             <h2 class="section-title">📰 Новости</h2>
@@ -765,6 +784,7 @@
         </div>
     </section>
 
+    <!-- ФУНКЦИИ -->
     <section class="section features" id="features">
         <div class="container">
             <h2 class="section-title">✨ Функции</h2>
@@ -803,6 +823,7 @@
         </div>
     </section>
 
+    <!-- ПОДПИСКА -->
     <div class="container">
         <div class="subscribe">
             <h2>Не пропустите новости!</h2>
@@ -813,6 +834,7 @@
         </div>
     </div>
 
+    <!-- ФУТЕР -->
     <footer>
         <div class="footer-container">
             <div class="footer-grid">
@@ -847,6 +869,7 @@
         </div>
     </footer>
 
+    <!-- МОДАЛЬНОЕ ОКНО -->
     <div class="modal-overlay" id="modal-overlay">
         <div class="modal" id="modal">
             <div class="modal-header">
